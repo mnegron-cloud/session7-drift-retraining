@@ -85,13 +85,27 @@ bash retrain_on_drift.sh                             # logs/drift.jsonl -> reaso
 gh run list --workflow train.yml --limit 3 && gh run watch
 ```
 
-The last two need the GitHub repo (secret `KAGGLE_API_TOKEN`, environment `production`).
-**Status: TODO**, fill in the run URL, gate verdict and metrics below once it has run.
+Repo: https://github.com/mnegron-cloud/session7-drift-retraining (environment `production`
+with a required reviewer). The trigger printed `max PSI = 2.214 -> RETRAIN` and
+`reason=drift PSI 2.214`, and `gh` created the run:
+[Actions run 44714125745](https://github.com/mnegron-cloud/session7-drift-retraining/actions/runs/44714125745)
+(event `workflow_dispatch`). The `train` job passed data, training, gate and export; `publish`
+waits for approval in `production`. The earlier run started by the first push was cancelled
+so the drift run was the one under test (both share the `train` concurrency group).
 
 ## 6. What the retraining changed, and what it did not
 
-- Served model before: `fraud-classifier` **v2**, threshold **0.000702** (`model/model_meta.json`).
-- New run: version ___, ROC AUC ___, PR AUC ___, gate ___ (from the Actions summary).
+| | Served before | Drift-triggered retraining |
+| --- | --- | --- |
+| Version | `fraud-classifier` v2 (local MLflow) | v1 (SQLite MLflow on the runner) |
+| Decision threshold | 0.000702 | 0.000702 |
+| Golden ROC AUC / PR AUC | — | 0.891 / 0.529 |
+| Golden recall | — | 0.91 |
+| Gate (≥ 0.85 / ≥ 0.50) | — | **pass** |
+
+The version numbers differ only because there are two registries (local v2, runner v1); the
+threshold is identical and the push-triggered run before it gave exactly the same metrics.
+The new model is the same model: retraining changed the run id, nothing else.
 
 **6.3** The training reads `data/processed/train.csv`, the same chronological split. It learned
 **nothing new** from the drifted traffic: same data, same params, same seed, so the same model.
