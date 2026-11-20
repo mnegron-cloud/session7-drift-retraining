@@ -90,7 +90,8 @@ with a required reviewer). The trigger printed `max PSI = 2.214 -> RETRAIN` and
 `reason=drift PSI 2.214`, and `gh` created the run:
 [Actions run 44714125745](https://github.com/mnegron-cloud/session7-drift-retraining/actions/runs/44714125745)
 (event `workflow_dispatch`). The `train` job passed data, training, gate and export; `publish`
-waits for approval in `production`. The earlier run started by the first push was cancelled
+was **left waiting for approval** in `production` on purpose: the retrained model is identical
+to the one already served (Part 6), so publishing a new image would change nothing. The earlier run started by the first push was cancelled
 so the drift run was the one under test (both share the `train` concurrency group).
 
 ## 6. What the retraining changed, and what it did not
