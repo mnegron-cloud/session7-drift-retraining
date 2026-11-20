@@ -1,0 +1,247 @@
+{
+  "n_reference": 20000,
+  "n_current": 500,
+  "max_psi": 0.03480853507949292,
+  "retrain": false,
+  "features": {
+    "v1": {
+      "test": "ks",
+      "statistic": 0.02604999999999999,
+      "pvalue": 0.8862236816564643,
+      "psi": 0.015363844981205082,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v2": {
+      "test": "ks",
+      "statistic": 0.043849999999999945,
+      "pvalue": 0.29641833102114745,
+      "psi": 0.026043066851672986,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v3": {
+      "test": "ks",
+      "statistic": 0.05130000000000001,
+      "pvalue": 0.14803082538923895,
+      "psi": 0.017660511977803793,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v4": {
+      "test": "ks",
+      "statistic": 0.0414500000000001,
+      "pvalue": 0.3615943693171385,
+      "psi": 0.02111416178270524,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v5": {
+      "test": "ks",
+      "statistic": 0.01905000000000001,
+      "pvalue": 0.9930260196059462,
+      "psi": 0.006344701761418545,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v6": {
+      "test": "ks",
+      "statistic": 0.053100000000000036,
+      "pvalue": 0.12308061329766207,
+      "psi": 0.02056127942529872,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v7": {
+      "test": "ks",
+      "statistic": 0.03420000000000001,
+      "pvalue": 0.605492611293752,
+      "psi": 0.02054018688406645,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v8": {
+      "test": "ks",
+      "statistic": 0.050449999999999995,
+      "pvalue": 0.16115108065801464,
+      "psi": 0.014170880120406449,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v9": {
+      "test": "ks",
+      "statistic": 0.050799999999999956,
+      "pvalue": 0.15564055921683806,
+      "psi": 0.02460621710880014,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v10": {
+      "test": "ks",
+      "statistic": 0.03815000000000013,
+      "pvalue": 0.4650164149461603,
+      "psi": 0.026936078210205446,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v11": {
+      "test": "ks",
+      "statistic": 0.03574999999999995,
+      "pvalue": 0.548771851568745,
+      "psi": 0.019365000560453104,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v12": {
+      "test": "ks",
+      "statistic": 0.03770000000000007,
+      "pvalue": 0.4802429975335347,
+      "psi": 0.007515062868329575,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v13": {
+      "test": "ks",
+      "statistic": 0.040700000000000014,
+      "pvalue": 0.38374254063971536,
+      "psi": 0.015326074302707791,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v14": {
+      "test": "ks",
+      "statistic": 0.0504,
+      "pvalue": 0.1619508274574406,
+      "psi": 0.022739861581567485,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v15": {
+      "test": "ks",
+      "statistic": 0.06704999999999994,
+      "pvalue": 0.023711337141825273,
+      "psi": 0.01671931693630791,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v16": {
+      "test": "ks",
+      "statistic": 0.04105000000000003,
+      "pvalue": 0.3733031193592907,
+      "psi": 0.014020093331245223,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v17": {
+      "test": "ks",
+      "statistic": 0.05449999999999999,
+      "pvalue": 0.10614852385934193,
+      "psi": 0.03452564294748344,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v18": {
+      "test": "ks",
+      "statistic": 0.026400000000000007,
+      "pvalue": 0.8765803349208147,
+      "psi": 0.012782233711792533,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v19": {
+      "test": "ks",
+      "statistic": 0.03675000000000006,
+      "pvalue": 0.5131496068439543,
+      "psi": 0.01874789300073525,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v20": {
+      "test": "ks",
+      "statistic": 0.05120000000000002,
+      "pvalue": 0.14952837310933675,
+      "psi": 0.03480853507949292,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v21": {
+      "test": "ks",
+      "statistic": 0.03434999999999999,
+      "pvalue": 0.5999443351870275,
+      "psi": 0.01112577498587043,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v22": {
+      "test": "ks",
+      "statistic": 0.036150000000000015,
+      "pvalue": 0.5344136960890953,
+      "psi": 0.009125281483325831,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v23": {
+      "test": "ks",
+      "statistic": 0.03885000000000005,
+      "pvalue": 0.44183126274645557,
+      "psi": 0.011669115916929068,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v24": {
+      "test": "ks",
+      "statistic": 0.03259999999999999,
+      "pvalue": 0.6650277161330141,
+      "psi": 0.01982331157613716,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v25": {
+      "test": "ks",
+      "statistic": 0.045050000000000034,
+      "pvalue": 0.26711839168429097,
+      "psi": 0.01102954323810434,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v26": {
+      "test": "ks",
+      "statistic": 0.046499999999999986,
+      "pvalue": 0.23459821191802233,
+      "psi": 0.029242726638610397,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v27": {
+      "test": "ks",
+      "statistic": 0.030200000000000005,
+      "pvalue": 0.7531516782364943,
+      "psi": 0.011424107337060892,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v28": {
+      "test": "ks",
+      "statistic": 0.058250000000000024,
+      "pvalue": 0.07006167082543169,
+      "psi": 0.029340739050012825,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "amount": {
+      "test": "ks",
+      "statistic": 0.02069999999999994,
+      "pvalue": 0.9822518720425917,
+      "psi": 0.007408219852697863,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "amount_band": {
+      "test": "chi2",
+      "pvalue": 0.9937619902244409,
+      "psi": null,
+      "drift_detected": false,
+      "level": "n/a"
+    }
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "n_reference": 20000,
+  "n_current": 500,
+  "max_psi": 2.2143042817817564,
+  "retrain": true,
+  "features": {
+    "v1": {
+      "test": "ks",
+      "statistic": 0.41795000000000004,
+      "pvalue": 9.723922452399086e-78,
+      "psi": 2.2143042817817564,
+      "drift_detected": true,
+      "level": "retrain"
+    },
+    "v2": {
+      "test": "ks",
+      "statistic": 0.434,
+      "pvalue": 4.36604332842276e-84,
+      "psi": 1.1354631775227761,
+      "drift_detected": true,
+      "level": "retrain"
+    },
+    "v3": {
+      "test": "ks",
+      "statistic": 0.37265,
+      "pvalue": 2.4525902327528847e-61,
+      "psi": 0.7726142543550178,
+      "drift_detected": true,
+      "level": "retrain"
+    },
+    "v4": {
+      "test": "ks",
+      "statistic": 0.47370000000000007,
+      "pvalue": 4.687256063156729e-101,
+      "psi": 1.112095627956044,
+      "drift_detected": true,
+      "level": "retrain"
+    },
+    "v5": {
+      "test": "ks",
+      "statistic": 0.02464999999999995,
+      "pvalue": 0.9209548046925152,
+      "psi": 0.016616245549686704,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v6": {
+      "test": "ks",
+      "statistic": 0.024499999999999966,
+      "pvalue": 0.9242887946653329,
+      "psi": 0.008183113743145806,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v7": {
+      "test": "ks",
+      "statistic": 0.0469,
+      "pvalue": 0.22617144180602067,
+      "psi": 0.018269910004021256,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v8": {
+      "test": "ks",
+      "statistic": 0.04050000000000009,
+      "pvalue": 0.38978849788017433,
+      "psi": 0.013384919233969578,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v9": {
+      "test": "ks",
+      "statistic": 0.0464,
+      "pvalue": 0.23674127935839417,
+      "psi": 0.015336802355285475,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v10": {
+      "test": "ks",
+      "statistic": 0.07504999999999995,
+      "pvalue": 0.00776075049970975,
+      "psi": 0.03261758303287538,
+      "drift_detected": true,
+      "level": "ok"
+    },
+    "v11": {
+      "test": "ks",
+      "statistic": 0.022799999999999987,
+      "pvalue": 0.9565050187827073,
+      "psi": 0.011957210425920293,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v12": {
+      "test": "ks",
+      "statistic": 0.03204999999999997,
+      "pvalue": 0.6854883260559068,
+      "psi": 0.009889500718173645,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v13": {
+      "test": "ks",
+      "statistic": 0.037049999999999986,
+      "pvalue": 0.5026520148934542,
+      "psi": 0.017729950879989506,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v14": {
+      "test": "ks",
+      "statistic": 0.035650000000000015,
+      "pvalue": 0.5523822081201755,
+      "psi": 0.019520224008822914,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v15": {
+      "test": "ks",
+      "statistic": 0.03894999999999993,
+      "pvalue": 0.43857087150656004,
+      "psi": 0.03349314774258122,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v16": {
+      "test": "ks",
+      "statistic": 0.03170000000000006,
+      "pvalue": 0.6984589650187332,
+      "psi": 0.0280837943714157,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v17": {
+      "test": "ks",
+      "statistic": 0.04085000000000005,
+      "pvalue": 0.3792464382770867,
+      "psi": 0.020196813744969466,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v18": {
+      "test": "ks",
+      "statistic": 0.034949999999999926,
+      "pvalue": 0.5778618974016159,
+      "psi": 0.025256262756382156,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v19": {
+      "test": "ks",
+      "statistic": 0.036150000000000015,
+      "pvalue": 0.5344136960890953,
+      "psi": 0.01622931203379923,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v20": {
+      "test": "ks",
+      "statistic": 0.03154999999999997,
+      "pvalue": 0.704000730494602,
+      "psi": 0.009376195565969775,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v21": {
+      "test": "ks",
+      "statistic": 0.024550000000000016,
+      "pvalue": 0.9231861097418901,
+      "psi": 0.01829717593849588,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v22": {
+      "test": "ks",
+      "statistic": 0.02805000000000002,
+      "pvalue": 0.8266628529660113,
+      "psi": 0.030287987971884946,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v23": {
+      "test": "ks",
+      "statistic": 0.062,
+      "pvalue": 0.04498259254429582,
+      "psi": 0.018639942894757223,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v24": {
+      "test": "ks",
+      "statistic": 0.031000000000000028,
+      "pvalue": 0.7242048938139618,
+      "psi": 0.03632690264383089,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v25": {
+      "test": "ks",
+      "statistic": 0.04390000000000005,
+      "pvalue": 0.29515381892699843,
+      "psi": 0.023546841265204663,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v26": {
+      "test": "ks",
+      "statistic": 0.04150000000000001,
+      "pvalue": 0.360147552409805,
+      "psi": 0.018450357512749503,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v27": {
+      "test": "ks",
+      "statistic": 0.05279999999999996,
+      "pvalue": 0.1269825262607821,
+      "psi": 0.02924972757861227,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "v28": {
+      "test": "ks",
+      "statistic": 0.03559999999999999,
+      "pvalue": 0.554190354637472,
+      "psi": 0.016269481233958223,
+      "drift_detected": false,
+      "level": "ok"
+    },
+    "amount": {
+      "test": "ks",
+      "statistic": 0.18645,
+      "pvalue": 2.5235948515783682e-15,
+      "psi": 0.3172085686271959,
+      "drift_detected": true,
+      "level": "retrain"
+    },
+    "amount_band": {
+      "test": "chi2",
+      "pvalue": 7.598334955501706e-29,
+      "psi": null,
+      "drift_detected": true,
+      "level": "n/a"
+    }
+  }
+}
