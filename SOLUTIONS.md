@@ -50,15 +50,32 @@ between inputs and fraud, P(y|X), did not change.
 
 **3.1 Prediction:** no input test fires; only the outcome layer (recall) can see it. Confirmed: exit 0.
 
-**3.4 RecallDrop.** Prometheus was not running (Docker off), and the 500-request run carries
-only 2 labelled frauds: **not enough labels** (the alert needs ≥ 5 in 15 min). A larger labelled
-run (1,000 requests, 10 % frauds, all labels returned, `--feedback-rate 1.0`) shows the effect
-from the logs directly:
+**3.4 RecallDrop.** With Prometheus scraping the API (`docker compose up -d prometheus`), the
+guide's 500-request run sent back 48 labels and **0 confirmed frauds**: `RecallDrop` stays
+**inactive**, **not enough labels** (the rule needs more than 5 confirmed frauds in 15 min).
 
-| Traffic | Labelled frauds | Recall | Max PSI |
-| ------- | --------------- | ------ | ------- |
-| Normal | 100 | 0.58 | 0.035 |
-| `--fraud-shift 0.7` | 100 | **0.20** | 0.035 |
+A larger labelled run makes it fire (1,000 requests, 10 % frauds, every label returned):
+
+```bash
+uv run python -m fraud.simulate --n 1000 --fraud-share 0.1 --feedback-rate 1.0 --fraud-shift 0.7 --seed 5
+```
+
+| Time | `RecallDrop` | Prometheus, last 15 min |
+| ---- | ------------ | ----------------------- |
+| 11:21:43 | traffic sent | |
+| 11:22:05 | **pending**, value 0.197 | |
+| 11:26:48 | **firing**, value 0.204 (after `for: 5m`) | tp 20, fn 80, tn 945, fp 0 |
+
+Same traffic through `fraud.drift`: max PSI 0.035, exit **0**. The same comparison from the logs:
+
+| Traffic (1,000 req, 100 labelled frauds) | Recall | Max PSI |
+| ---------------------------------------- | ------ | ------- |
+| Normal | 0.58 | 0.035 |
+| `--fraud-shift 0.7` | **0.20** | 0.035 |
+
+Windows note: if another project holds port 8000 (here Airbyte), run the API on `--port 8001`,
+point the Prometheus `host` target to `host.docker.internal:8001`, and pass
+`--url http://localhost:8001` to `fraud.simulate`.
 
 **3.5** No input test can see concept drift because the inputs have the same distribution;
 only the link between inputs and frauds changed, and only labels reveal that link.
